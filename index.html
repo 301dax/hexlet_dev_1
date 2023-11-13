@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <meta name="description" content="Hexly dev 1" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,700;1,400&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <h1 class="navigation__title"><a href="/">UniDesign</a></h1>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#about" class="navigation__link">About Me</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Projects</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Contacts</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Hire Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section welcome">
+        <div class="section__content">
+          <p class="welcome__sub-title">Welcome To My PortFolio</p>
+          <h2 class="welcome__title">
+            Hi , I am Steven UI/UX <span class="welcome__title_accent">Desginer</span>
+          </h2>
+          <p class="welcome__paragraph">
+            Lorem Ipsum dolar sit amet, consectetur adipicsing elit. Locus odio et, plateo erat est
+            sed turpis hoc equit
+          </p>
+          <div class="welcome__buttons">
+            <button class="welcome__button button">Hire Me</button>
+            <button class="welcome__button button button_secondary">My Projects</button>
+          </div>
+        </div>
+        <div class="section__image-wrapper">
+          <img src="./assets/img/useImage.jpeg" alt="user image" class="welcome__img" />
+        </div>
+      </section>
+
+      <section class="section about">
+        <div class="section__content">
+          <h2 class="section__title">About Me</h2>
+          <p class="about__paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has .
+          </p>
+
+          <button class="about__button button" id="about">Hire Me</button>
+        </div>
+        <div class="section__image-wrapper">
+          <div class="about__animation-wrapper chel-animation">
+            <img src="assets/img/chel/chel.png" alt="about me img" class="about__img" />
+            <div class="floating-group floating-animation">
+              <img
+                src="assets/img/chel/chel-1.png"
+                alt="about me item"
+                class="chel-animation__item chel-animation__item-1"
+              />
+              <img
+                src="assets/img/chel/chel-2.png"
+                alt="about me item"
+                class="chel-animation__item chel-animation__item-2"
+              />
+              <img
+                src="assets/img/chel/chel-3.png"
+                alt="about me item"
+                class="chel-animation__item chel-animation__item-3"
+              />
+              <img
+                src="assets/img/chel/chel-4.png"
+                alt="about me item"
+                class="chel-animation__item chel-animation__item-4"
+              />
+              <div class="cursor-wrapper cursor-click-animation">
+                <img
+                  src="assets/img/chel/chel-5.png"
+                  alt="about me item"
+                  class="chel-animation__item chel-animation__item-5"
+                />
+              </div>
+
+              <img
+                src="assets/img/chel/chel-6.png"
+                alt="about me item"
+                class="chel-animation__item chel-animation__item-6"
+              />
+            </div>
+
+            <div class="fade-up-animation">
+              <img
+                src="assets/img/chel/chel-7.png"
+                alt="about me item"
+                class="chel-animation__item chel-animation__item-7"
+              />
+            </div>
+
+            <div class="fade-up-animation-1">
+              <img
+                src="assets/img/chel/chel-7.png"
+                alt="about me item"
+                class="chel-animation__item chel-animation__item-7-1"
+              />
+            </div>
+
+            <div class="fade-up-animation-2">
+              <img
+                src="assets/img/chel/chel-7.png"
+                alt="about me item"
+                class="chel-animation__item chel-animation__item-7-2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects">
+        <h2 class="section__title">My Projects</h2>
+
+        <div class="projects__grid">
+          <div class="projects__grid-item"><img src="" alt="" class="project" /></div>
+          <div class="projects__grid-item"><img src="" alt="" class="project" /></div>
+          <div class="projects__grid-item"><img src="" alt="" class="project" /></div>
+          <div class="projects__grid-item"><img src="" alt="" class="project" /></div>
+          <div class="projects__grid-item"><img src="" alt="" class="project" /></div>
+          <div class="projects__grid-item"><img src="" alt="" class="project" /></div>
+          <div class="projects__grid-item"><img src="" alt="" class="project" /></div>
+          <div class="projects__grid-item"><img src="" alt="" class="project" /></div>
+          <div class="projects__grid-item"><img src="" alt="" class="project" /></div>
+        </div>
+      </section>
+
+      <section class="section contact">
+        <h2 class="section__title">Contact Me</h2>
+        <p class="section__subtitle">Lorem Ipsum is simply text of the printing</p>
+
+        <form action="" class="contact__form">
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <textarea placeholder="Message..."></textarea>
+          <input type="submit" value="Contact" />
+        </form>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+@keyframes floating-chel-item {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes cursor-click {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-18px, -25px);
+  }
+  40% {
+    transform: translate(-32px, -18px);
+  }
+  60% {
+    transform: translate(-38px, -22px);
+  }
+}
+@keyframes fade-up {
+  0% {
+    transform: translate(0, 0px);
+    opacity: 0.5;
+  }
+  5% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -100px);
+    opacity: 0;
+  }
+}
+.floating-animation {
+  animation-name: floating-chel-item;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.cursor-click-animation {
+  animation-name: cursor-click;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.fade-up-animation {
+  animation-name: fade-up;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.fade-up-animation-1 {
+  animation-name: fade-up;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 0.3s;
+}
+
+.fade-up-animation-2 {
+  animation-name: fade-up;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 0.6s;
+}/*# sourceMappingURL=animations.css.map */

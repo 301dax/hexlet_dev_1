@@ -1,0 +1,36 @@
+.button {
+  padding: 18px 0;
+  width: 246px;
+  height: 72px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: var(--color-white);
+  border: 2px solid var(--main-color);
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  // Приступно уродливые тени у кнопок не стал делать
+
+  transition-duration: .5s;
+  transition-property: background-color border-color, color;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    background-color: var(--color-white);
+    border-color: var(--main-color);
+    color: var(--main-color)
+  }
+
+  &_secondary {
+    background-color: var(--color-white);
+    border-color: var(--main-color);
+    color: var(--main-color);
+
+    &:hover {
+      background-color: var(--main-color);
+      border-color: var(--color-white);
+      color: var(--color-white);
+    }
+  }
+}

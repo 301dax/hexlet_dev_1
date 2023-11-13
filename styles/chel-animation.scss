@@ -1,0 +1,76 @@
+.chel-animation {
+  position: relative;
+
+  &__item {
+    transform: scale(0.45);
+    position: absolute;
+  }
+
+  .cursor-wrapper {
+    position: relative;
+    z-index: 4;
+  }
+
+  & .chel-animation__item {
+    &-1 {
+      top: 286px;
+      left: 60px;
+    }
+
+    &-2 {
+      top: 102px;
+      left: 144px;
+    }
+
+    &-3 {
+      top: 18px;
+      left: 282px;
+    }
+
+    &-4 {
+      top: 208px;
+      left: 588px;
+    }
+
+    &-5 {
+      top: 476px;
+      left: 820px;
+      z-index: 2;
+    }
+
+    &-6 {
+      top: 344px;
+      left: 500px;
+    }
+
+    &-7 {
+      top: 454px;
+      left: 352px;
+      z-index: 2;
+    }
+
+    &-7-1 {
+      top: 350px;
+      left: 452px;
+      z-index: 2;
+    }
+
+    &-7-2 {
+      top: 500px;
+      left: 552px;
+      z-index: 2;
+    }
+
+    &-7-3 {
+      top: 454px;
+      left: 352px;
+      z-index: 2;
+    }
+
+    &-7-4 {
+      top: 454px;
+      left: 352px;
+      z-index: 2;
+    }
+  }
+}

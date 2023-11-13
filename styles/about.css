@@ -1,0 +1,27 @@
+.about {
+  background-color: rgba(67, 186, 253, 0.06);
+  margin-top: 173px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.about > .section__content {
+  margin: 219px 0 0 46px;
+}
+.about__paragraph {
+  font-size: 1.5rem;
+  color: var(--color-black);
+  margin-top: 25px;
+  line-height: 36px;
+  width: 416px;
+}
+.about__img {
+  width: 925px;
+  height: 925px;
+  position: absolute;
+  top: -15px;
+  left: 46px;
+}
+.about__button {
+  margin: 40px 0 0 31px;
+}/*# sourceMappingURL=about.css.map */

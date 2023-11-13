@@ -1,0 +1,31 @@
+.about {
+  background-color: rgba(67, 186, 253, .06);
+  margin-top: 173px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  &>.section__content {
+    margin: 219px 0 0 46px;
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    color: var(--color-black);
+    margin-top: 25px;
+    line-height: 36px;
+    width: 416px;
+  }
+
+  &__img {
+    width: 925px;
+    height: 925px;
+    position: absolute;
+    top: -15px;
+    left: 46px;
+  }
+
+  &__button {
+    margin: 40px 0 0 31px;
+  }
+}

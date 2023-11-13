@@ -1,0 +1,36 @@
+.navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 58px 114px 45px 78px;
+}
+.navigation__title {
+  font-size: 3rem;
+  color: var(--logo-color);
+  font-weight: bold;
+}
+.navigation__title a {
+  text-decoration: none;
+  color: var(--logo-color);
+  transition: opacity 0.1s ease-in;
+}
+.navigation__title a:hover {
+  opacity: 0.8;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  gap: 4.8rem;
+}
+.navigation__link {
+  font-size: 1.875rem;
+  color: var(--color-light-gray);
+  text-decoration: none;
+  transition: -webkit-text-decoration 0.5s ease-in;
+  transition: text-decoration 0.5s ease-in;
+  transition: text-decoration 0.5s ease-in, -webkit-text-decoration 0.5s ease-in;
+}
+.navigation__link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=navigation.css.map */

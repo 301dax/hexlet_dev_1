@@ -1,0 +1,60 @@
+@import url('../node_modules/reset-css/reset.css');
+@import url('./animations.css');
+@import url('./about.css');
+@import url('./chel-animation.css');
+@import url('./navigation.css');
+@import url('./ui.css');
+@import url(./welcome.css);
+
+:root {
+  --main-color: #2000e7;
+  --accent-color: #f2bd00;
+  --logo-color: #0e0578;
+  --color-light-gray: #686565;
+  --color-gray: #383838;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins';
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+
+
+.section {
+  // width: 100%
+
+  &__title {
+    font-size: 3rem;
+    color: var(--main-color);
+    letter-spacing: 16.8px;
+    font-weight: bold;
+  }
+
+  &__image-wrapper {
+    position: relative;
+  }
+}
+
+
+
+
+
+
+
+.floating-group {
+  width: inherit;
+}
