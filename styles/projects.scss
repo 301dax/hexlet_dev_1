@@ -1,0 +1,79 @@
+.projects {
+  background-color: rgba(255, 214, 150, 0.20);
+  height: 910px;
+  margin-top: 300px;
+  padding: 48px 108px;
+  box-sizing: border-box;
+
+  &__title {
+    text-align: center;
+    letter-spacing: 1rem;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-top: 12px;
+    letter-spacing: 3px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 47px 0;
+    justify-items: center;
+    gap: 46px;
+
+    &-item {
+      width: 246px;
+      height: 180px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+
+      cursor: pointer;
+
+      &::before {
+        content: attr(data-name);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 100%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-white);
+        font-weight: bold;
+        letter-spacing: 2px;
+
+        transition-property: top, opacity;
+        transition-duration: .3s;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        background-color: rgba(32, 0, 231, .5);
+
+      }
+
+      &:hover {
+        &::before {
+          top: 0%;
+        }
+
+        .project {
+          filter: blur(5px);
+
+        }
+      }
+    }
+
+  }
+
+  .project {
+    width: 246px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: filter .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+}

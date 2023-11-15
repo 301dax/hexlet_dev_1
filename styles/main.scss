@@ -1,10 +1,4 @@
-@import url('../node_modules/reset-css/reset.css');
-@import url('./animations.css');
-@import url('./about.css');
-@import url('./chel-animation.css');
-@import url('./navigation.css');
-@import url('./ui.css');
-@import url(./welcome.css);
+@import './reset.css', './animations.scss', './chel-animation.scss', './section.scss', './about.scss', './navigation.scss', './ui.scss', './welcome.scss', './projects.scss', './contact.scss';
 
 :root {
   --main-color: #2000e7;
@@ -30,31 +24,4 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   overflow-x: hidden;
-}
-
-
-
-.section {
-  // width: 100%
-
-  &__title {
-    font-size: 3rem;
-    color: var(--main-color);
-    letter-spacing: 16.8px;
-    font-weight: bold;
-  }
-
-  &__image-wrapper {
-    position: relative;
-  }
-}
-
-
-
-
-
-
-
-.floating-group {
-  width: inherit;
 }

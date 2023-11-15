@@ -1,0 +1,135 @@
+@keyframes vibing {
+  0% {
+    transform: rotate(30deg) translate(0, 0)
+  }
+
+  50% {
+    transform: rotate(0deg) translate(6px, -9px)
+  }
+
+  100% {
+    transform: rotate(30deg) translate(0, 0)
+  }
+
+}
+
+.vibing-animation {
+  animation-name: vibing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transform-origin: right;
+}
+
+.contact {
+  height: 1316px;
+  background-color: rgba(67, 186, 253, 0.06);
+  margin-top: 273px;
+
+  &__title {
+    font-size: 4rem;
+    padding-top: 83px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-top: 26px;
+    letter-spacing: 2px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  &__form {
+    margin-top: 159px;
+    margin-left: 66px;
+    display: flex;
+    flex-direction: column;
+    gap: 81px;
+    max-width: 657px;
+    align-items: center;
+  }
+
+  &__field {
+    width: 653px;
+    height: 94px;
+    background: #FFF;
+    color: black;
+    outline: none;
+    box-shadow: 13px 21px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 0;
+    font-size: 30px;
+    text-indent: 53px;
+
+    transition: box-shadow .1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:focus {
+      box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__textarea {
+    width: 653px;
+    height: 265px;
+    background: #FFF;
+    box-shadow: 13px 21px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 0;
+    outline: 0;
+    font-size: 35px;
+    padding: 30px 49px;
+    box-sizing: border-box;
+    resize: none;
+
+    transition: box-shadow .1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:focus {
+      box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+
+  }
+
+  &__submit {
+    width: 327px;
+    height: 94px;
+    background: #FFF;
+    box-shadow: 13px 21px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  &__user-img {
+    height: 958px;
+    width: 958px;
+    position: absolute;
+
+    left: -140px;
+    top: -20px;
+    pointer-events: none;
+
+    &-1 {
+      position: absolute;
+      top: 200px;
+      left: 600px;
+      width: 70px;
+    }
+
+    &-2 {
+      position: absolute;
+      top: 198px;
+      left: 6px;
+      width: 70px;
+    }
+
+    &-3 {
+      position: absolute;
+      top: 78px;
+      left: 490px;
+      width: 100px;
+    }
+  }
+}

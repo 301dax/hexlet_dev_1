@@ -58,4 +58,8 @@
   top: 454px;
   left: 352px;
   z-index: 2;
+}
+
+.floating-group {
+  width: inherit;
 }/*# sourceMappingURL=chel-animation.css.map */

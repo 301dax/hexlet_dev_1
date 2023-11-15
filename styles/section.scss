@@ -1,0 +1,20 @@
+.section {
+  &__title {
+    font-size: 3rem;
+    color: var(--main-color);
+    letter-spacing: 16.8px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    color: var(--color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__image-wrapper {
+    position: relative;
+  }
+}
