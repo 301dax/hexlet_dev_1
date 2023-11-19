@@ -1,5 +1,3 @@
-@import './reset.css', './animations.scss', './chel-animation.scss', './section.scss', './about.scss', './navigation.scss', './ui.scss', './welcome.scss', './projects.scss', './contact.scss';
-
 :root {
   --main-color: #2000e7;
   --accent-color: #f2bd00;
@@ -13,6 +11,8 @@
 * {
   margin: 0;
 }
+
+@import './reset.css', './animations.scss', './chel-animation.scss', './section.scss', './about.scss', './navigation.scss', './ui.scss', './welcome.scss', './projects.scss', './contact.scss', './footer.scss';
 
 html {
   scroll-behavior: smooth;

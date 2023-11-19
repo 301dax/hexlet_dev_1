@@ -1,0 +1,152 @@
+.footer {
+  margin-top: 208px;
+  background-color: rgba(255, 214, 150, 0.20);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+
+    padding: 137px 40px 50px;
+    justify-content: space-between;
+  }
+
+  &__subscribe-block {
+    flex-basis: 550px;
+
+    & a {
+      font-size: 3rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--logo-color);
+
+      transition: opacity .1s ease-in;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    & form {
+      margin-top: 50px;
+    }
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 60px;
+    padding: 24px 0;
+    align-items: center;
+    justify-content: space-between;
+
+    &__caption {
+      font-size: 32px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      gap: 42px;
+    }
+
+    &__img {
+      width: 42px;
+      height: 42px;
+      object-fit: cover;
+    }
+
+
+    &__caption {
+      font-size: 32px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__img {
+      width: 42px;
+      height: 42px;
+      object-fit: cover;
+      padding: 18px;
+    }
+  }
+
+  &-group {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 250px;
+    font-family: Jost;
+    font-size: 31px;
+
+    &__caption {
+      font-weight: bold;
+    }
+
+    &__item {
+      & a {
+        color: var(--color-black);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: solid;
+        }
+      }
+    }
+  }
+
+  &__hr {
+    margin: 80px 60px;
+  }
+
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+
+  &>input {
+    height: 97px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 31px;
+    font-weight: 700;
+    font-family: Jost;
+  }
+
+  &__email {
+    width: 55%;
+    padding: 0;
+    padding-right: 120px;
+    text-indent: 24px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+
+    &::placeholder {
+      color: var(--color-white)
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    width: 40%;
+    right: 0;
+    top: 0;
+    color: var(--color-white);
+    background-color: #F965FC;
+    cursor: pointer;
+
+    transition: background-color .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover {
+      background-color: #fd85ff;
+    }
+  }
+}

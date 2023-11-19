@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,700;1,400&family=Poppins:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -22,9 +22,13 @@
         <h1 class="navigation__title"><a href="/">UniDesign</a></h1>
         <ul class="navigation__list">
           <li class="navigation__item"><a href="#about" class="navigation__link">About Me</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Projects</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Contacts</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Hire Me</a></li>
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link">Projects</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link">Contacts</a>
+          </li>
+          <li class="navigation__item"><a href="#hire" class="navigation__link">Hire Me</a></li>
         </ul>
       </nav>
     </header>
@@ -128,7 +132,7 @@
       </section>
 
       <section class="section projects">
-        <h2 class="projects__title section__title">My Projects</h2>
+        <h2 class="projects__title section__title" id="projects">My Projects</h2>
         <p class="projects__subtitle section__subtitle">
           Lorem Ipsum is simply text of the printing
         </p>
@@ -136,7 +140,7 @@
         <div class="projects__grid">
           <div class="projects__grid-item" data-name="Project-1">
             <img
-              src="https://source.unsplash.com/random"
+              src="https://source.unsplash.com/random/300x300"
               loading="lazy"
               alt="unique person"
               class="project"
@@ -144,7 +148,7 @@
           </div>
           <div class="projects__grid-item" data-name="Project-2">
             <img
-              src="https://source.unsplash.com/random"
+              src="https://source.unsplash.com/random/300x300"
               loading="lazy"
               alt="unique person"
               class="project"
@@ -152,7 +156,7 @@
           </div>
           <div class="projects__grid-item" data-name="Project-3">
             <img
-              src="https://source.unsplash.com/random"
+              src="https://source.unsplash.com/random/300x300"
               loading="lazy"
               alt="unique person"
               class="project"
@@ -160,7 +164,7 @@
           </div>
           <div class="projects__grid-item" data-name="Project-4">
             <img
-              src="https://source.unsplash.com/random"
+              src="https://source.unsplash.com/random/300x300"
               loading="lazy"
               alt="unique person"
               class="project"
@@ -176,7 +180,7 @@
           </div>
           <div class="projects__grid-item" data-name="Project-6">
             <img
-              src="https://source.unsplash.com/random"
+              src="https://source.unsplash.com/random/300x300"
               loading="lazy"
               alt="unique person"
               class="project"
@@ -184,7 +188,7 @@
           </div>
           <div class="projects__grid-item" data-name="Project-7">
             <img
-              src="https://source.unsplash.com/random"
+              src="https://source.unsplash.com/random/300x300"
               loading="lazy"
               alt="unique person"
               class="project"
@@ -192,7 +196,7 @@
           </div>
           <div class="projects__grid-item" data-name="Project-8">
             <img
-              src="https://source.unsplash.com/random"
+              src="https://source.unsplash.com/random/300x300"
               loading="lazy"
               alt="unique person"
               class="project"
@@ -200,7 +204,7 @@
           </div>
           <div class="projects__grid-item" data-name="Project-9">
             <img
-              src="https://source.unsplash.com/random"
+              src="https://source.unsplash.com/random/300x300"
               loading="lazy"
               alt="unique person"
               class="project"
@@ -220,7 +224,7 @@
               <input class="contact__field" type="email" placeholder="Email" />
               <input class="contact__field" type="password" placeholder="Password" />
               <textarea class="contact__textarea" placeholder="Message..."></textarea>
-              <input class="contact__submit" type="submit" value="Contact" />
+              <input class="contact__submit" type="submit" value="Contact" id="hire" />
             </form>
           </div>
           <div class="section__image-wrapper">
@@ -249,27 +253,73 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="footer__wrapper">
-        <div class="footer__subscribe-block"></div>
+        <div class="footer__subscribe-block">
+          <a href="/">UniDesign</a>
+          <form class="subscribe-form">
+            <input class="subscribe-form__email" type="email" placeholder="Email" />
+            <input class="subscribe-form__submit" type="submit" value="Subscribe" />
+          </form>
+        </div>
         <ul class="footer-group">
-          <p class="footer-group__caption"></p>
-          <li class="footer-group__item"><a href=""></a></li>
-          <li class="footer-group__item"><a href=""></a></li>
-          <li class="footer-group__item"><a href=""></a></li>
-          <li class="footer-group__item"><a href=""></a></li>
+          <p class="footer-group__caption">Platform</p>
+          <li class="footer-group__item"><a href="">Home</a></li>
+          <li class="footer-group__item"><a href="">Overview</a></li>
+          <li class="footer-group__item"><a href="">Pricing</a></li>
+          <li class="footer-group__item"><a href="">About</a></li>
         </ul>
         <ul class="footer-group">
-          <p class="footer-group__caption"></p>
-          <li class="footer-group__item"><a href=""></a></li>
-          <li class="footer-group__item"><a href=""></a></li>
-          <li class="footer-group__item"><a href=""></a></li>
-          <li class="footer-group__item"><a href=""></a></li>
+          <p class="footer-group__caption">Help</p>
+          <li class="footer-group__item"><a href="">How It Works?</a></li>
+          <li class="footer-group__item"><a href="">Pay?</a></li>
+          <li class="footer-group__item"><a href="">Question?</a></li>
+          <li class="footer-group__item"><a href="">Contact?</a></li>
         </ul>
         <ul class="footer-group">
-          <p class="footer-group__caption"></p>
-          <li class="footer-group__item"><a href=""></a></li>
-          <li class="footer-group__item"><a href=""></a></li>
+          <p class="footer-group__caption">Contact</p>
+          <li class="footer-group__item"><a href="tel:(+000) 1234-6789">(+000) 1234-6789</a></li>
+          <li class="footer-group__item">
+            <a href="">116 Archlor Road Broadlaband, NewYork (NYC) 1205</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="footer__hr" />
+      <div class="footer-links">
+        <p class="footer-links__caption">CopyRighted 2020-2023 All Rights Reserved.</p>
+        <ul class="footer-links__list">
+          <li class="footer-links__item" id="contacts">
+            <a href=""
+              ><img
+                src="./assets/svg/youtube-svgrepo-com.svg"
+                alt="logo `yt"
+                class="footer-links__img"
+            /></a>
+          </li>
+          <li class="footer-links__item">
+            <a href=""
+              ><img
+                src="./assets/svg/instagram-svgrepo-com.svg"
+                alt="logo inst"
+                class="footer-links__img"
+            /></a>
+          </li>
+          <li class="footer-links__item">
+            <a href=""
+              ><img
+                src="./assets/svg/facebook-svgrepo-com.svg"
+                alt="logo fb"
+                class="footer-links__img"
+            /></a>
+          </li>
+          <li class="footer-links__item">
+            <a href=""
+              ><img
+                src="./assets/svg/linkedin-svgrepo-com.svg"
+                alt="logo li"
+                class="footer-links__img"
+            /></a>
+          </li>
         </ul>
       </div>
     </footer>

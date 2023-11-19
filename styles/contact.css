@@ -85,6 +85,11 @@
   border: none;
   font-size: 32px;
   margin-top: 40px;
+  cursor: pointer;
+  transition: box-shadow 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.contact__submit:hover {
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.25);
 }
 .contact__user-img {
   height: 958px;
