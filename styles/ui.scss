@@ -13,7 +13,7 @@
   // Приступно уродливые тени у кнопок не стал делать
 
   transition-duration: .5s;
-  transition-property: background-color border-color color;
+  transition-property: background-color, border-color, color;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
   &:hover {
